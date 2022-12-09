@@ -1,0 +1,68 @@
+<!-- author: Sujan Gautam(23541498) -->
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      ABOUT
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">ABOUT</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list>
+    <ion-item>
+      <ion-text>
+      <h4> Device </h4>
+      </ion-text>
+      </ion-item>
+    <ion-item>
+      <ion-text>
+       Model: {{model}}
+      </ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-text>
+       OS: {{platform}}
+      </ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-text>
+       OS Version: {{version}}
+      </ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-text>
+       Hardware Serial Number: {{serial}}
+      </ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-text>
+       Manufacturer: {{manufacturer}}
+      </ion-text>
+    </ion-item>
+  </ion-list> 
+  <ion-list>
+    <ion-item>
+      <ion-text>
+      <h4> Battery </h4>
+      </ion-text>
+      </ion-item>
+      <ion-item>
+       <ion-text>
+        Battery Level: {{batteryLevel}}
+       </ion-text>
+      </ion-item>
+      <ion-item> 
+       <ion-text>
+        Battery Charger Plugged: {{plugged}}
+       </ion-text>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+<ion-footer>
+</ion-footer>
