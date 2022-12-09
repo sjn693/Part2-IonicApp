@@ -15,6 +15,7 @@ export class Tab3Page {
       // watch change in battery status
    const subscription = this.batteryStatus.onChange().subscribe(status => {
     console.log(status.level, status.isPlugged);
+    console.log();
     this.plugged = status.isPlugged;
     this.batteryLevel= status.level;
   });
